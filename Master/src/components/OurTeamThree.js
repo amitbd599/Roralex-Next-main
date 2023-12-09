@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   FaFacebookF,
@@ -7,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const OurTeamThree = () => {
   return (
@@ -15,16 +16,16 @@ const OurTeamThree = () => {
       {/* Our Team Section version three start */}
       {/* <section className='ourTeam-section-version-three bg-white pt-200 pb-60'> */}
       {/* Header Intro Version Three */}
-      <div className='header-intro-version-three'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='wrapper'>
-                <div className='pop-text'>
+      <div className="header-intro-version-three">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="wrapper">
+                <div className="pop-text">
                   <h3>Our Team</h3>
                   <h2>
-                    Meet the Leaders and <br /> get{" "}
-                    <span className='theme-color'>solution</span>
+                    Meet the Leaders and <br /> get
+                    <span className="theme-color">solution</span>
                   </h2>
                 </div>
               </div>
@@ -33,11 +34,11 @@ const OurTeamThree = () => {
         </div>
       </div>
       {/* Our Team Section Card Items */}
-      <div className='inner-card-items-slider'>
-        <div className='container'>
-          <div className='row'>
-            <div className='swiper swiper-container team-version-three'>
-              <div className='swiper-wrapper'>
+      <div className="inner-card-items-slider">
+        <div className="container">
+          <div className="row">
+            <div className="swiper swiper-container team-version-three">
+              <div className="swiper-wrapper">
                 <Swiper
                   // install Swiper modules
                   modules={[Pagination]}
@@ -76,265 +77,265 @@ const OurTeamThree = () => {
                 >
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-6.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-6.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link to='/team-details'>
-                            <h2 className='name'>Michael V. Fournier</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">Michael V. Fournier</h2>
                           </Link>
-                          <p className='position'>Civil Engineer</p>
-                          <div className='social-icon'>
+                          <p className="position">Civil Engineer</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-7.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-7.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link to='/team-details'>
-                            <h2 className='name'>George Skertchly</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">George Skertchly</h2>
                           </Link>
-                          <p className='position'>Building Inspector</p>
-                          <div className='social-icon'>
+                          <p className="position">Building Inspector</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-8.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-8.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link to='/team-details'>
-                            <h2 className='name'>Dakota Budd</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">Dakota Budd</h2>
                           </Link>
-                          <p className='position'>Architecture</p>
-                          <div className='social-icon'>
+                          <p className="position">Architecture</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-9.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-9.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link to='/team-details'>
-                            <h2 className='name'>Betty O. Werner</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">Betty O. Werner</h2>
                           </Link>
-                          <p className='position'>Architect</p>
-                          <div className='social-icon'>
+                          <p className="position">Architect</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-6.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-6.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link hreto='/team-details'>
-                            <h2 className='name'>Michael V. Fournier</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">Michael V. Fournier</h2>
                           </Link>
-                          <p className='position'>Civil Engineer</p>
-                          <div className='social-icon'>
+                          <p className="position">Civil Engineer</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div>
-                      <div className='inner-wrapper '>
-                        <div className='img-file'>
+                      <div className="inner-wrapper ">
+                        <div className="img-file">
                           <img
-                            className='img-fluid'
-                            src='./assets/img/team/team-10.png'
-                            alt=''
+                            className="img-fluid"
+                            src="./assets/img/team/team-10.png"
+                            alt=""
                           />
                         </div>
-                        <div className='intro'>
-                          <Link to='/team-details'>
-                            <h2 className='name'>Betty R. Reis</h2>
+                        <div className="intro">
+                          <Link href="/team-details">
+                            <h2 className="name">Betty R. Reis</h2>
                           </Link>
-                          <p className='position'>Stereotyper</p>
-                          <div className='social-icon'>
+                          <p className="position">Stereotyper</p>
+                          <div className="social-icon">
                             <ul>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaFacebookF />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaTwitter />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaYoutube />
                                 </a>
                               </li>
                               <li>
-                                <a href='#'>
+                                <a href="#">
                                   <FaLinkedinIn />
                                 </a>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <div className='overlay' />
+                        <div className="overlay" />
                       </div>
                     </div>
                   </SwiperSlide>

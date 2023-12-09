@@ -1,43 +1,45 @@
+"use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import { FaAngleDoubleRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 const ProjectBackgroundOverlayThree = () => {
   return (
     <>
       {/* Project Background Overlay Section version three start */}
       <section
-        className='projectBackgroundOverlay-version-three bg-white '
+        className="projectBackgroundOverlay-version-three bg-white "
         style={{
           backgroundImage: "url('assets/img/bg-overlay/bg-overlay-4.png')",
         }}
       >
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='wrapper'>
-                <div className='main-text'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="wrapper">
+                <div className="main-text">
                   <h2>
                     See why we are trusted <br />
                     the world over
                   </h2>
                 </div>
                 {/* Button Section */}
-                <div className='btn-section text-center'>
-                  <Link to='/services'>
-                    <span className='btn-shape-normal-outline'>
+                <div className="btn-section text-center">
+                  <Link href="/services">
+                    <span className="btn-shape-normal-outline">
                       <span>More Services</span>
                     </span>
                   </Link>
                 </div>
                 {/* Hip Slider */}
-                <div className='hip-slider'>
-                  <div className='container'>
-                    <div className='row'>
+                <div className="hip-slider">
+                  <div className="container">
+                    <div className="row">
                       {/* Additional required wrapper */}
-                      <div className='swiper swiper-container hip-slider-one'>
-                        <div className='swiper-wrapper'>
+                      <div className="swiper swiper-container hip-slider-one">
+                        <div className="swiper-wrapper">
                           {/* Slides */}
                           <Swiper
                             // install Swiper modules
@@ -51,11 +53,11 @@ const ProjectBackgroundOverlayThree = () => {
                             <SwiperSlide>
                               {" "}
                               <div>
-                                <div className='inner-wrapper'>
-                                  <div className='text'>
+                                <div className="inner-wrapper">
+                                  <div className="text">
                                     <h2>Popular Destinations</h2>
                                   </div>
-                                  <div className='list'>
+                                  <div className="list">
                                     <ul>
                                       <li>
                                         {" "}
@@ -86,11 +88,11 @@ const ProjectBackgroundOverlayThree = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                               <div>
-                                <div className='inner-wrapper'>
-                                  <div className='text'>
+                                <div className="inner-wrapper">
+                                  <div className="text">
                                     <h2>History of building</h2>
                                   </div>
-                                  <div className='list'>
+                                  <div className="list">
                                     <ul>
                                       <li>
                                         {" "}
@@ -121,11 +123,11 @@ const ProjectBackgroundOverlayThree = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                               <div>
-                                <div className='inner-wrapper'>
-                                  <div className='text'>
+                                <div className="inner-wrapper">
+                                  <div className="text">
                                     <h2>Construction today</h2>
                                   </div>
-                                  <div className='list'>
+                                  <div className="list">
                                     <ul>
                                       <li>
                                         {" "}

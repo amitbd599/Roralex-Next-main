@@ -1,8 +1,9 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const LatestProjectsTwo = () => {
   const isotope = React.useRef(Isotope | null);
@@ -32,14 +33,14 @@ const LatestProjectsTwo = () => {
   return (
     <>
       {/* Latest Projects Section version two start */}
-      <section className='latest-project-version-two bg-gray py-80'>
+      <section className="latest-project-version-two bg-gray py-80">
         {/* Header Intro Version Two */}
-        <div className='header-intro-version-two'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12'>
-                <div className='wrapper'>
-                  <div className='pop-text'>
+        <div className="header-intro-version-two">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="wrapper">
+                  <div className="pop-text">
                     <h3>Our All Featured &amp; Running Projects</h3>
                     <h2>Latest Projects</h2>
                   </div>
@@ -49,13 +50,13 @@ const LatestProjectsTwo = () => {
           </div>
         </div>
         {/* Inner Items Data */}
-        <div className='project-body'>
-          <div className='container'>
-            <div className='row'>
+        <div className="project-body">
+          <div className="container">
+            <div className="row">
               {/* Start Project Filter Area */}
-              <div className='col-12'>
-                <div className='text-center'>
-                  <div className='project-filter mb-40'>
+              <div className="col-12">
+                <div className="text-center">
+                  <div className="project-filter mb-40">
                     <button
                       className={active === 1 ? "active" : null}
                       onClick={() => handleFilterKeyChange("*", 1)}
@@ -99,26 +100,26 @@ const LatestProjectsTwo = () => {
             </div>
             {/* Start Project Filter Items Area */}
             <div
-              id='project-version-two'
-              className='row project-version-two filter-container'
+              id="project-version-two"
+              className="row project-version-two filter-container"
             >
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro5 pro2'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro5 pro2">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-1.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-1.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>construction site</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -126,9 +127,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -137,23 +138,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-2.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-2.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Integrating Digital</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -161,9 +162,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -172,23 +173,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5 pro2'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5 pro2">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-3.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-3.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Building Plan</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -196,9 +197,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -207,23 +208,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro3'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro3">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-4.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-4.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Insurance Building</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -231,9 +232,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -242,23 +243,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro3 pro4">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-5.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-5.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Masonry Walls</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -266,9 +267,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -277,23 +278,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro5">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-6.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-6.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Electric Water</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -301,9 +302,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -312,23 +313,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro2'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro4 pro2">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-7.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-7.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Plastering Eal</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -336,9 +337,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>
@@ -347,23 +348,23 @@ const LatestProjectsTwo = () => {
                   </div>
                 </div>
               </div>
-              <div className='col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro4'>
-                <div className='project-item image-container'>
-                  <div className='project-wrapper'>
-                    <div className='img-file'>
+              <div className="col-xl-3 col-lg-4 col-md-6 filter-item pro1 pro4">
+                <div className="project-item image-container">
+                  <div className="project-wrapper">
+                    <div className="img-file">
                       <img
-                        className='img-fluid'
-                        src='./assets/img/project/project-8.png'
-                        alt=''
+                        className="img-fluid"
+                        src="./assets/img/project/project-8.png"
+                        alt=""
                       />
-                      <div className='text-overlay'>
-                        <div className='text'>
+                      <div className="text-overlay">
+                        <div className="text">
                           <h2>Contractor Pul</h2>
                           <p>
                             civil engineer and construction worker manager
                             holding digital tablet and blueprints talking
                           </p>
-                          <div className='location'>
+                          <div className="location">
                             <span>
                               <FaMapMarkerAlt />
                             </span>
@@ -371,9 +372,9 @@ const LatestProjectsTwo = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='btn-section'>
-                        <Link to='/project-details'>
-                          <span className='btn-shape-normal-outline'>
+                      <div className="btn-section">
+                        <Link href="/project-details">
+                          <span className="btn-shape-normal-outline">
                             <span>View Info</span>
                           </span>
                         </Link>

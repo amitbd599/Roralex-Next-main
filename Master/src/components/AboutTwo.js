@@ -1,35 +1,35 @@
+import Link from "next/link";
 import React from "react";
 import { FaCircle } from "react-icons/fa";
 
-import { Link } from "react-router-dom";
 const AboutTwo = () => {
   return (
     <>
       {/* About Section version two start */}
-      <section className='about-section-version-two  py-80'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-6'>
-              <div className='left-side'>
-                <div className='wrapper'>
-                  <div className='img-file'>
+      <section className="about-section-version-two  py-80">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="left-side">
+                <div className="wrapper">
+                  <div className="img-file">
                     <img
-                      className='img-fluid'
-                      src='./assets/img/about-us/about-3.png'
-                      alt=''
+                      className="img-fluid"
+                      src="./assets/img/about-us/about-3.png"
+                      alt=""
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-lg-6'>
-              <div className='right-side'>
-                <div className='wrapper'>
-                  <div className='intro'>
+            <div className="col-lg-6">
+              <div className="right-side">
+                <div className="wrapper">
+                  <div className="intro">
                     <h3>About Our Company</h3>
                     <h2>
                       We Provide the{" "}
-                      <span className='theme-color'>best quality</span>
+                      <span className="theme-color">best quality</span>
                       service and construction
                     </h2>
                     <p>
@@ -39,7 +39,7 @@ const AboutTwo = () => {
                       and employment to establish.”
                     </p>
                   </div>
-                  <div className='list-data'>
+                  <div className="list-data">
                     <ul>
                       <li>
                         <FaCircle />
@@ -63,9 +63,9 @@ const AboutTwo = () => {
                         </span>
                       </li>
                     </ul>
-                    <div className='btn-section'>
-                      <Link to='/about'>
-                        <span className='btn-shape-normal-outline'>
+                    <div className="btn-section">
+                      <Link href="/about">
+                        <span className="btn-shape-normal-outline">
                           <span>Learn More</span>
                         </span>
                       </Link>

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   FaAngleDown,
@@ -15,8 +16,8 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 const HeaderTwo = () => {
   const [active, setActive] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -64,47 +65,47 @@ const HeaderTwo = () => {
   return (
     <>
       {/* Top Intro Section Start */}
-      <div className='top-header d-none d-lg-block'>
-        <div className='container '>
-          <div className='row'>
-            <div className='col-lg-8'>
-              <div className='left-wrapper'>
-                <div className='social-icon'>
+      <div className="top-header d-none d-lg-block">
+        <div className="container ">
+          <div className="row">
+            <div className="col-lg-8">
+              <div className="left-wrapper">
+                <div className="social-icon">
                   <ul>
                     <li>
-                      <a href='#'>
+                      <a href="#">
                         <FaFacebookF />
                       </a>
                     </li>
                     <li>
-                      <a href='#'>
+                      <a href="#">
                         <FaTwitter />
                       </a>
                     </li>
                     <li>
-                      <a href='#'>
+                      <a href="#">
                         <FaYoutube />
                       </a>
                     </li>
                     <li>
-                      <a href='#'>
+                      <a href="#">
                         <FaLinkedinIn />
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div className='news-intro simple-marquee-container'>
-                  <div id='topHeader' className='scroll-text'>
+                <div className="news-intro simple-marquee-container">
+                  <div id="topHeader" className="scroll-text">
                     <Marquee pauseOnHover={true} gradient={false}>
-                      <a href='#'>
+                      <a href="#">
                         Within this period, any defects found in building must
                         be fixed and replaced.
                       </a>
-                      <a href='#'>
+                      <a href="#">
                         The superstructure is constructed once the substructure
                         is complete.
                       </a>
-                      <a href='#'>
+                      <a href="#">
                         Building structures are generally constructed on
                         concrete foundations.
                       </a>
@@ -113,15 +114,15 @@ const HeaderTwo = () => {
                 </div>
               </div>
             </div>
-            <div className='col-lg-4'>
-              <div className='right-wrapper'>
-                <div className='login-reg'>
-                  <div className='inner'>
+            <div className="col-lg-4">
+              <div className="right-wrapper">
+                <div className="login-reg">
+                  <div className="inner">
                     <span>
                       <FaUserAlt />
                     </span>
-                    <span className='pt-5'>
-                      <a href='#'>Login</a> / <a href='#'>Registration</a>
+                    <span className="pt-5">
+                      <a href="#">Login</a> / <a href="#">Registration</a>
                     </span>
                   </div>
                 </div>
@@ -135,116 +136,116 @@ const HeaderTwo = () => {
       <>
         {/* header-area-start */}
         <header
-          id='header-sticky'
+          id="header-sticky"
           className={
             scroll
               ? "header-intro-version-two-area header__sticky"
               : "header-intro-version-two-area"
           }
         >
-          <div className='container'>
-            <div className='row align-items-center justify-content-between'>
-              <div className='col-xl-2 col-lg-2 col-md-6 col-6'>
-                <div className='logo-area'>
-                  <div className='logo'>
-                    <Link to='/index-2'>
+          <div className="container">
+            <div className="row align-items-center justify-content-between">
+              <div className="col-xl-2 col-lg-2 col-md-6 col-6">
+                <div className="logo-area">
+                  <div className="logo">
+                    <Link href="/index-2">
                       <img
-                        src='./assets/img/common/Logo_White.png'
-                        alt='Roralex'
+                        src="./assets/img/common/Logo_White.png"
+                        alt="Roralex"
                       />
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className='col-xl-10 col-lg-10 col-md-6 col-6 '>
-                <div className='menu-body'>
-                  <div className='main-menu'>
-                    <nav id='mobile-menu'>
+              <div className="col-xl-10 col-lg-10 col-md-6 col-6 ">
+                <div className="menu-body">
+                  <div className="main-menu">
+                    <nav id="mobile-menu">
                       <ul>
-                        <li className='has-dropdown'>
-                          <Link to='/index-1'>
+                        <li className="has-dropdown">
+                          <Link href="/index-1">
                             Home <FaAngleDown />
                           </Link>
-                          <ul className='sub-menu'>
+                          <ul className="sub-menu">
                             <li>
-                              <Link to='/index-1'>Home One</Link>
+                              <Link href="/index-1">Home One</Link>
                             </li>
                             <li>
-                              <Link to='/index-2'>Home Two</Link>
+                              <Link href="/index-2">Home Two</Link>
                             </li>
                             <li>
-                              <Link to='/index-3'>Home Three</Link>
+                              <Link href="/index-3">Home Three</Link>
                             </li>
                           </ul>
                         </li>
-                        <li className='has-dropdown'>
-                          <Link to='/services'>
+                        <li className="has-dropdown">
+                          <Link href="/services">
                             Services <FaAngleDown />
                           </Link>
-                          <ul className='sub-menu'>
+                          <ul className="sub-menu">
                             <li>
-                              <Link to='/services'>Services</Link>
+                              <Link href="/services">Services</Link>
                             </li>
                             <li>
-                              <Link to='/services-details'>
+                              <Link href="/services-details">
                                 Services Details
                               </Link>
                             </li>
                           </ul>
                         </li>
-                        <li className='has-dropdown'>
-                          <Link to='/about'>
+                        <li className="has-dropdown">
+                          <Link href="/about">
                             Pages <FaAngleDown />
                           </Link>
-                          <ul className='sub-menu'>
+                          <ul className="sub-menu">
                             <li>
-                              <Link to='/about'>About Us</Link>
+                              <Link href="/about">About Us</Link>
                             </li>
                             <li>
-                              <Link to='/team'>Team</Link>
+                              <Link href="/team">Team</Link>
                             </li>
                             <li>
-                              <Link to='/team-details'>Team Details</Link>
+                              <Link href="/team-details">Team Details</Link>
                             </li>
                             <li>
-                              <Link to='/project'>projects</Link>
+                              <Link href="/project">projects</Link>
                             </li>
                             <li>
-                              <Link to='/project-details'>
+                              <Link href="/project-details">
                                 projects Details
                               </Link>
                             </li>
                             <li>
-                              <Link to='/pricing'>pricing Page</Link>
+                              <Link href="/pricing">pricing Page</Link>
                             </li>
                             <li>
-                              <Link to='/faq'>FAQ Page</Link>
+                              <Link href="/faq">FAQ Page</Link>
                             </li>
                           </ul>
                         </li>
-                        <li className='has-dropdown'>
-                          <Link to='/blog'>
+                        <li className="has-dropdown">
+                          <Link href="/blog">
                             Blogs <FaAngleDown />
                           </Link>
-                          <ul className='sub-menu'>
+                          <ul className="sub-menu">
                             <li>
-                              <Link to='/blog'>Blogs</Link>
+                              <Link href="/blog">Blogs</Link>
                             </li>
                             <li>
-                              <Link to='/blog-details'>Blog Details</Link>
+                              <Link href="/blog-details">Blog Details</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <Link to='/contact'>Contact</Link>
+                          <Link href="/contact">Contact</Link>
                         </li>
                       </ul>
                     </nav>
                   </div>
                 </div>
-                <div className='side-menu-icon d-lg-none text-end'>
+                <div className="side-menu-icon d-lg-none text-end">
                   <span
-                    className='info-toggle-btn f-right sidebar-toggle-btn'
+                    className="info-toggle-btn f-right sidebar-toggle-btn"
                     onClick={mobileMenu}
                   >
                     <FaBars />
@@ -263,152 +264,156 @@ const HeaderTwo = () => {
             className={`offcanvas-mobile-menu ${
               active === true ? "active" : ""
             } `}
-            id='mobile-menu-overlay'
+            id="mobile-menu-overlay"
           >
-            <div className='sidebar__logo mb-20'>
+            <div className="sidebar__logo mb-20">
               <div>
-                <Link to='/index-1'>
-                  <img src='./assets/img/common/Logo_Black.png' alt='logo' />
+                <Link href="/index-1">
+                  <img src="./assets/img/common/Logo_Black.png" alt="logo" />
                 </Link>
                 <p>Trusted Contraction service!</p>
               </div>
 
-              <div className='sidebar__close'>
+              <div className="sidebar__close">
                 <button
-                  className='sidebar__close-btn'
-                  id='sidebar__close-btn'
+                  className="sidebar__close-btn"
+                  id="sidebar__close-btn"
                   onClick={mobileMenu}
                 >
                   <FaTimes />
                 </button>
               </div>
             </div>
-            <div className='sidebar__search mb-25'>
-              <form action='#'>
-                <input type='text' placeholder='Find A Construction Service!' />
-                <button type='submit'>
+            <div className="sidebar__search mb-25">
+              <form action="#">
+                <input type="text" placeholder="Find A Construction Service!" />
+                <button type="submit">
                   <FaSearch />
                 </button>
               </form>
             </div>
-            <div className='offcanvas-wrapper'>
-              <div className='offcanvas-inner-content'>
-                <nav className='offcanvas-navigation' id='offcanvas-navigation'>
+            <div className="offcanvas-wrapper">
+              <div className="offcanvas-inner-content">
+                <nav className="offcanvas-navigation" id="offcanvas-navigation">
                   <ul>
-                    <li className='menu-item-has-children'>
-                      <Link to={`/home-one`}>HOME</Link>
-                      <ul className='sub-menu'>
+                    <li className="menu-item-has-children">
+                      <Link href={`/home-one`}>HOME</Link>
+                      <ul className="sub-menu">
                         <li>
-                          <Link to={`/home-one`}>Home One</Link>
+                          <Link href={`/home-one`}>Home One</Link>
                         </li>
                         <li>
-                          <Link to={`/home-two`}>Home Two</Link>
+                          <Link href={`/home-two`}>Home Two</Link>
                         </li>
                         <li>
-                          <Link to={`/home-three`}>Home Three</Link>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li className='menu-item-has-children'>
-                      <Link to={`/services`}>Services</Link>
-                      <ul className='sub-menu'>
-                        <li>
-                          <Link to={`/services`}>Service Page</Link>
-                        </li>
-                        <li>
-                          <Link to={`/services-details`}>Services Details</Link>
+                          <Link href={`/home-three`}>Home Three</Link>
                         </li>
                       </ul>
                     </li>
 
-                    <li className='menu-item-has-children'>
-                      <Link to={`/about`}>Pages</Link>
-                      <ul className='sub-menu'>
+                    <li className="menu-item-has-children">
+                      <Link href={`/services`}>Services</Link>
+                      <ul className="sub-menu">
                         <li>
-                          <Link to={`/about`}>About Us</Link>
+                          <Link href={`/services`}>Service Page</Link>
                         </li>
                         <li>
-                          <Link to={`/team`}>Team</Link>
-                        </li>
-                        <li>
-                          <Link to={`/team-details`}>Team Details</Link>
-                        </li>
-                        <li>
-                          <Link to={`/project`}>Projects</Link>
-                        </li>
-                        <li>
-                          <Link to={`/project-details`}>Projects Details</Link>
-                        </li>
-                        <li>
-                          <Link to={`/pricing`}>Pricing Page</Link>
-                        </li>
-                        <li>
-                          <Link to={`/faq`}>FAQ Page</Link>
+                          <Link href={`/services-details`}>
+                            Services Details
+                          </Link>
                         </li>
                       </ul>
                     </li>
-                    <li className='menu-item-has-children'>
-                      <Link to={`/blog`}>Blog</Link>
-                      <ul className='sub-menu'>
+
+                    <li className="menu-item-has-children">
+                      <Link href={`/about`}>Pages</Link>
+                      <ul className="sub-menu">
                         <li>
-                          <Link to={`/blog`}>Blog</Link>
+                          <Link href={`/about`}>About Us</Link>
                         </li>
                         <li>
-                          <Link to={`/blog-details`}>Blog Details</Link>
+                          <Link href={`/team`}>Team</Link>
+                        </li>
+                        <li>
+                          <Link href={`/team-details`}>Team Details</Link>
+                        </li>
+                        <li>
+                          <Link href={`/project`}>Projects</Link>
+                        </li>
+                        <li>
+                          <Link href={`/project-details`}>
+                            Projects Details
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href={`/pricing`}>Pricing Page</Link>
+                        </li>
+                        <li>
+                          <Link href={`/faq`}>FAQ Page</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="menu-item-has-children">
+                      <Link href={`/blog`}>Blog</Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link href={`/blog`}>Blog</Link>
+                        </li>
+                        <li>
+                          <Link href={`/blog-details`}>Blog Details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={`/contact`}>CONTACT</Link>{" "}
+                      <Link href={`/contact`}>CONTACT</Link>{" "}
                     </li>
                   </ul>
                 </nav>
 
-                <div className='sidebar__contact  mb-20'>
+                <div className="sidebar__contact  mb-20">
                   <h4>Contact With US</h4>
-                  <div className='sidebar__social'>
+                  <div className="sidebar__social">
                     <ul>
                       <li>
-                        <a href='#'>
+                        <a href="#">
                           <FaFacebookF />
                         </a>
                       </li>
                       <li>
-                        <a href='#'>
+                        <a href="#">
                           <FaTwitter />
                         </a>
                       </li>
                       <li>
-                        <a href='#'>
+                        <a href="#">
                           <FaYoutube />
                         </a>
                       </li>
                       <li>
-                        <a href='#'>
+                        <a href="#">
                           <FaLinkedinIn />
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <div className='location-email-intro mobile'>
-                    <div className='inner-location-email-intro pr-30'>
-                      <div className='inner'>
+                  <div className="location-email-intro mobile">
+                    <div className="inner-location-email-intro pr-30">
+                      <div className="inner">
                         <span>
                           <FaLocationArrow />
                         </span>
-                        <span className='text'>Location</span>
+                        <span className="text">Location</span>
                       </div>
-                      <h5 className='text'>4043 Riverside Augusta</h5>
+                      <h5 className="text">4043 Riverside Augusta</h5>
                     </div>
-                    <div className='inner-location-email-intro pt-5'>
-                      <div className='inner'>
+                    <div className="inner-location-email-intro pt-5">
+                      <div className="inner">
                         <span>
                           <FaEnvelope />
                         </span>
-                        <span className='text'>Get In Touch</span>
+                        <span className="text">Get In Touch</span>
                       </div>
-                      <h5 className='text'>info@roralex.com</h5>
+                      <h5 className="text">info@roralex.com</h5>
                     </div>
                   </div>
                 </div>

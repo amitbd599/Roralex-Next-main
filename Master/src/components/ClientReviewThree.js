@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Isotope from "isotope-layout";
 
@@ -14,18 +15,18 @@ const ClientReviewThree = () => {
   return (
     <>
       {/* Client Review Section version three Start */}
-      <section className='client-review-version-three bg-white py-80'>
+      <section className="client-review-version-three bg-white py-80">
         {/* Header Intro Version Three */}
-        <div className='header-intro-version-three'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12'>
-                <div className='wrapper'>
-                  <div className='pop-text'>
+        <div className="header-intro-version-three">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="wrapper">
+                  <div className="pop-text">
                     <h3>Client Review</h3>
                     <h2>
                       Many Satisfied Clients <br /> Say{" "}
-                      <span className='theme-color'>About</span> Us
+                      <span className="theme-color">About</span> Us
                     </h2>
                   </div>
                 </div>
@@ -34,18 +35,18 @@ const ClientReviewThree = () => {
           </div>
         </div>
         {/* Cliner review version Three */}
-        <div className='client-review-version-three '>
+        <div className="client-review-version-three ">
           <Tabs>
-            <div className='container'>
-              <div className='row'>
-                <div className='col-md-4'>
-                  <div className='left-side'>
-                    <div className='review-filter'>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="left-side">
+                    <div className="review-filter">
                       <TabList>
-                        <div className='row'>
-                          <div className='col-4'>
-                            <div className='no-inner'>
-                              <div className='inner-two'>
+                        <div className="row">
+                          <div className="col-4">
+                            <div className="no-inner">
+                              <div className="inner-two">
                                 <Tab>
                                   <div
                                     className={
@@ -59,9 +60,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-7.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-7.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -79,9 +80,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-8.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-8.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -89,9 +90,9 @@ const ClientReviewThree = () => {
                               </div>
                             </div>
                           </div>
-                          <div className='col-4'>
-                            <div className='have-inner'>
-                              <div className='inner'>
+                          <div className="col-4">
+                            <div className="have-inner">
+                              <div className="inner">
                                 <Tab>
                                   <div
                                     className={
@@ -105,9 +106,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-9.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-9.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -125,9 +126,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-10.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-10.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -145,9 +146,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-11.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-11.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -155,9 +156,9 @@ const ClientReviewThree = () => {
                               </div>
                             </div>
                           </div>
-                          <div className='col-4'>
-                            <div className='no-inner'>
-                              <div className='inner-two'>
+                          <div className="col-4">
+                            <div className="no-inner">
+                              <div className="inner-two">
                                 <Tab>
                                   <div
                                     className={
@@ -171,9 +172,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-12.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-12.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -191,9 +192,9 @@ const ClientReviewThree = () => {
                                   >
                                     <span>
                                       <img
-                                        className='img-fluid'
-                                        src='./assets/img/client/profile-13.png'
-                                        alt=''
+                                        className="img-fluid"
+                                        src="./assets/img/client/profile-13.png"
+                                        alt=""
                                       />
                                     </span>
                                   </div>
@@ -206,25 +207,25 @@ const ClientReviewThree = () => {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-8'>
-                  <div className='right-side'>
-                    <div className='intro-section '>
+                <div className="col-md-8">
+                  <div className="right-side">
+                    <div className="intro-section ">
                       <h3>We’ve 536+ Clients</h3>
                       <h2>They Say About Solutions</h2>
                     </div>
                     <div
-                      id='review-version-three'
-                      className=' review-version-three filter-container'
+                      id="review-version-three"
+                      className=" review-version-three filter-container"
                     >
                       <TabPanel>
-                        <div className=' pro1 filter-item'>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro1 filter-item">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Sed efficitur dapibus porta. Nulla porta, velit
                                 eget porttitor aliquam, tellus tellus pharetra
@@ -234,7 +235,7 @@ const ClientReviewThree = () => {
                                 fringilla a convallis.”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Monisa Biswas</h3>
                               <p>Software Developer</p>
                             </div>
@@ -242,14 +243,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro2 filter-item'>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro2 filter-item">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Building construction is the process of adding
                                 structure to real property. The vast majority of
@@ -258,7 +259,7 @@ const ClientReviewThree = () => {
                                 renovation of a bathroom.”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Michael J. Barreto</h3>
                               <p>Administrative officer</p>
                             </div>
@@ -266,14 +267,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro3 filter-item'>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro3 filter-item">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Project will be considered as success when the
                                 project is completed on time, within budget and
@@ -283,7 +284,7 @@ const ClientReviewThree = () => {
                                 schedule, quality, and safety..”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Robert D. Simms</h3>
                               <p>Composing machine tender</p>
                             </div>
@@ -291,14 +292,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro4 filter-item '>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro4 filter-item ">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Introduction to Construction is a course that
                                 will offer hands-on activities and real world
@@ -308,7 +309,7 @@ const ClientReviewThree = () => {
                                 history and traditions of construction trades.”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Debbie J. Johnson</h3>
                               <p>Composing machine tender</p>
                             </div>
@@ -316,14 +317,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro5 filter-item '>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro5 filter-item ">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Detailed and strategic planning is the most
                                 important aspect of successful construction
@@ -334,7 +335,7 @@ const ClientReviewThree = () => {
                                 the work on schedule and within budget. ”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Aubrey S. Jensen</h3>
                               <p>Aircraft and avionics service technician</p>
                             </div>
@@ -342,14 +343,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro6 filter-item '>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro6 filter-item ">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Foundation is broadly divided into two
                                 categories: shallow foundation and deep
@@ -360,7 +361,7 @@ const ClientReviewThree = () => {
                                 footings. ”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Anthony S. Knight</h3>
                               <p>News camera operator</p>
                             </div>
@@ -368,14 +369,14 @@ const ClientReviewThree = () => {
                         </div>
                       </TabPanel>
                       <TabPanel>
-                        <div className=' pro7 filter-item '>
-                          <div className='image-container'>
-                            <div className='icon-file'>
+                        <div className=" pro7 filter-item ">
+                          <div className="image-container">
+                            <div className="icon-file">
                               <span>
                                 <FaQuoteLeft />
                               </span>
                             </div>
-                            <div className='text-file'>
+                            <div className="text-file">
                               <p>
                                 “Building construction is a process or
                                 techniques of adding structure to real property.
@@ -386,7 +387,7 @@ const ClientReviewThree = () => {
                                 advancement in technology.. ”
                               </p>
                             </div>
-                            <div className='button-intro'>
+                            <div className="button-intro">
                               <h3>Joshua S. Fisher</h3>
                               <p>Dredge operator</p>
                             </div>
