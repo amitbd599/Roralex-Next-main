@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { FaCalendarAlt, FaRegCalendarAlt, FaUserAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,12 +1,12 @@
 import AboutThree from "@/components/AboutThree";
-// import BlogSectionThree from "@/components/BlogSectionThree";
-// import ClientReviewThree from "@/components/ClientReviewThree";
-// import FooterThree from "@/components/FooterThree";
+import BlogSectionThree from "@/components/BlogSectionThree";
+import ClientReviewThree from "@/components/ClientReviewThree";
+import FooterThree from "@/components/FooterThree";
 import HeaderThree from "@/components/HeaderThree";
 import LatestProjectsThree from "@/components/LatestProjectsThree";
-// import NewsLetterThree from "@/components/NewsLetterThree";
-// import OurClientThree from "@/components/OurClientThree";
-// import OurPlanPriceThree from "@/components/OurPlanPriceThree";
+import NewsLetterThree from "@/components/NewsLetterThree";
+import OurClientThree from "@/components/OurClientThree";
+import OurPlanPriceThree from "@/components/OurPlanPriceThree";
 import OurTeamThree from "@/components/OurTeamThree";
 import ProjectBackgroundOverlayThree from "@/components/ProjectBackgroundOverlayThree";
 import ServiceListThree from "@/components/ServiceListThree";
@@ -43,22 +43,22 @@ const page = () => {
       <LatestProjectsThree />
 
       {/* Client Review Three */}
-      {/* <ClientReviewThree /> */}
+       <ClientReviewThree /> 
 
       {/* Blog Section Three */}
-      {/* <BlogSectionThree /> */}
+       <BlogSectionThree /> 
 
       {/* Our Plan Price Three */}
-      {/* <OurPlanPriceThree /> */}
+       <OurPlanPriceThree /> 
 
       {/* News Letter Three */}
-      {/* <NewsLetterThree /> */}
+       <NewsLetterThree /> 
 
       {/* Our Client Three */}
-      {/* <OurClientThree /> */}
+       <OurClientThree /> 
 
       {/* Footer Three */}
-      {/* <FooterThree /> */}
+       <FooterThree /> 
     </>
   );
 };

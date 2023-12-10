@@ -35,7 +35,7 @@ const ProjectBackgroundOverlayFour = () => {
                   </div>
                   <div>
                     <div className='wrapper-middle'>
-                      <h2>Licensed Professionals</h2>
+                      <h2>Professionals</h2>
                       <div className='icon-file'>
                         <img src='./assets/img/icons/icon-22.svg' alt='' />
                       </div>
