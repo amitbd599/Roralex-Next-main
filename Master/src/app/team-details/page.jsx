@@ -2,10 +2,6 @@ import HeaderOne from "@/components/HeaderOne";
 import BreadCrumb from "@/elements/BreadCrumb";
 import OurClientOne from "@/components/OurClientOne";
 import FooterOne from "@/components/FooterOne";
-import AboutOne from "@/components/AboutOne";
-import WhyChooseUsFour from "@/components/WhyChooseUsFour";
-import ProjectBackgroundOverlayOne from "@/components/ProjectBackgroundOverlayOne";
-import OurTeamThree from "@/components/OurTeamThree";
 import TeamDetailsInner from "@/components/TeamDetailsInner";
 
 const page = () => {

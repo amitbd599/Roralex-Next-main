@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, Toaster } from "react-hot-toast";
@@ -36,25 +37,25 @@ const ContactInner = () => {
   };
   return (
     <>
-      <Toaster position='bottom-center' reverseOrder={false} />
+      <Toaster position="bottom-center" reverseOrder={false} />
       {/* Contact version one start */}
-      <section className='contact-version-one bg-white pt-80'>
+      <section className="contact-version-one bg-white pt-80">
         {/* Header Intro Version One */}
-        <div className='header-intro-version-one'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12 col-lg-10 col-xl-7'>
-                <div className='wrapper'>
-                  <div className='pop-text'>
+        <div className="header-intro-version-one">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-lg-10 col-xl-7">
+                <div className="wrapper">
+                  <div className="pop-text">
                     <h3>GET IN TOUCH</h3>
-                    <div className='shape-img'>
-                      <img src='./assets/img/shape/Union-1.svg' alt='' />
+                    <div className="shape-img">
+                      <img src="./assets/img/shape/Union-1.svg" alt="" />
                     </div>
                   </div>
-                  <div className='inner-text'>
+                  <div className="inner-text">
                     <h2>
                       We would like to meet you <br /> free{" "}
-                      <span className='theme-color'>to get in touch</span>
+                      <span className="theme-color">to get in touch</span>
                     </h2>
                     <p>
                       Building construction is the process of adding structure
@@ -69,68 +70,68 @@ const ContactInner = () => {
           </div>
         </div>
         {/* Inner Card Items */}
-        <div className='contact-inner'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-8'>
-                <div className='wrapper'>
+        <div className="contact-inner">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+                <div className="wrapper">
                   <form ref={form} onSubmit={sendEmail}>
-                    <div className='input-field'>
-                      <div className='field'>
-                        <div className='wrapper'>
-                          <div className='input-inner'>
-                            <div className='d-md-flex access gap-3'>
+                    <div className="input-field">
+                      <div className="field">
+                        <div className="wrapper">
+                          <div className="input-inner">
+                            <div className="d-md-flex access gap-3">
                               <input
-                                name='user_name'
-                                type='text'
-                                placeholder='Your Name : '
+                                name="user_name"
+                                type="text"
+                                placeholder="Your Name : "
                                 required
-                                title='Field must be a number.'
-                                aria-required='true'
+                                title="Field must be a number."
+                                aria-required="true"
                               />
                               <input
-                                name='user_email'
-                                type='email'
-                                placeholder='Email ID :  '
+                                name="user_email"
+                                type="email"
+                                placeholder="Email ID :  "
                                 required
                               />
                             </div>
-                            <div className='d-md-flex access gap-3 mt-15'>
+                            <div className="d-md-flex access gap-3 mt-15">
                               <input
-                                name='country'
-                                type='text'
-                                placeholder='Country : '
+                                name="country"
+                                type="text"
+                                placeholder="Country : "
                                 required
                               />
                               <input
-                                name='phone'
-                                type='text'
-                                placeholder='Phone No :  '
-                                required=''
+                                name="phone"
+                                type="text"
+                                placeholder="Phone No :  "
+                                required=""
                               />
                             </div>
-                            <div className=' mt-15'>
+                            <div className=" mt-15">
                               <input
-                                name='website'
-                                type='text'
-                                placeholder='Website Link : '
+                                name="website"
+                                type="text"
+                                placeholder="Website Link : "
                               />
                             </div>
-                            <div className='mt-15'>
+                            <div className="mt-15">
                               <textarea
-                                name='message'
-                                id='test'
+                                name="message"
+                                id="test"
                                 rows={4}
                                 cols={50}
-                                placeholder='Enter Details...'
+                                placeholder="Enter Details..."
                                 required
                                 defaultValue={""}
                               />
                             </div>
-                            <div className='main-btn'>
+                            <div className="main-btn">
                               <button
-                                type='submit'
-                                className='btn-shape-normal-outline'
+                                type="submit"
+                                className="btn-shape-normal-outline"
                               >
                                 <span>Send Massage</span>
                               </button>
@@ -143,9 +144,9 @@ const ContactInner = () => {
                   </form>
                 </div>
               </div>
-              <div className='col-lg-4'>
-                <div className='right-side'>
-                  <div className='intro'>
+              <div className="col-lg-4">
+                <div className="right-side">
+                  <div className="intro">
                     <h2>Get in touch with us</h2>
                     <p>
                       The present state of construction is complex. There is a
@@ -153,7 +154,7 @@ const ContactInner = () => {
                       aimed primarily.{" "}
                     </p>
                   </div>
-                  <div className='list-data'>
+                  <div className="list-data">
                     <ul>
                       <li>
                         <div>
@@ -198,11 +199,11 @@ const ContactInner = () => {
           </div>
         </div>
         {/* Map Data */}
-        <div className='contact-g-map'>
-          <div className='container-fluid'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <iframe src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29208.601361499546!2d90.3598076!3d23.7803374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1589109092857!5m2!1sen!2sbd' />
+        <div className="contact-g-map">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29208.601361499546!2d90.3598076!3d23.7803374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1589109092857!5m2!1sen!2sbd" />
               </div>
             </div>
           </div>
